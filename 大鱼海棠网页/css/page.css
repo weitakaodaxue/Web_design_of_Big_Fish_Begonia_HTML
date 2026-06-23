@@ -1,0 +1,90 @@
+main h2 {
+	color: #d4783a;
+	line-height: 60px;
+	text-align: center;
+	font-size: 34px;
+	font-family: "幼圆";
+	width: 15%;
+	margin: 10px auto;
+	letter-spacing: 2px;
+	text-shadow: 4px 3px 3px #b7a696;
+}
+
+main ul {
+	width: 80%;
+	margin: 20px auto;
+	margin-bottom: 30px;
+}
+
+main ul li {
+	margin-bottom: 10px;
+}
+
+main ul li h4 {
+	color: #c0392b;
+	font-size: 20px;
+	margin-bottom: 4px;
+}
+
+main ul li h5 {
+	color: #a67c6b;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 8px;
+}
+
+main ul li p {
+	color: #4a3520;
+	font-size: 15px;
+	line-height: 1.8;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+main ul li img {
+	float: left;
+	display: block;
+	margin-right: 30px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+main ul li img:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+main .ul_3 {
+	width: 70%;
+	margin: 20px auto;
+}
+
+main .ul_3 li {
+	width: 50%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	float: left;
+	height: 110px;
+}
+
+main .ul_3 h4,
+main .ul_3 h5,
+main .ul_3 p {
+	line-height: 30px;
+}
+
+main .ul_3 h4 {
+	color: #c0392b;
+	font-size: 17px;
+}
+
+main .ul_3 h5 {
+	color: #a67c6b;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+main .ul_3 p {
+	color: #4a3520;
+	font-size: 14px;
+}
