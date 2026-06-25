@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/page6.css">
+	<style>
+		/* 顶部轮播样式 */
+		.carousel-top {
+			width: 80%;
+			margin: 0 auto 30px;
+			overflow: hidden;
+			border-radius: 16px;
+			box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+			position: relative;
+			background: rgba(0, 0, 0, 0.3);
+		}
+
+		.carousel-track {
+			display: flex;
+			width: 400%;
+			animation: carouselRotate 16s linear infinite;
+		}
+
+		.carousel-track:hover {
+			animation-play-state: paused;
+		}
+
+		.carousel-track img {
+			width: 25%;
+			height: 320px;
+			object-fit: cover;
+			display: block;
+			flex-shrink: 0;
+		}
+
+		@keyframes carouselRotate {
+			0% {
+				transform: translateX(0);
+			}
+
+			25% {
+				transform: translateX(-25%);
+			}
+
+			50% {
+				transform: translateX(-50%);
+			}
+
+			75% {
+				transform: translateX(-75%);
+			}
+
+			100% {
+				transform: translateX(0);
+			}
+		}
+
+		/* 指示器小圆点 */
+		.carousel-dots {
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+			z-index: 5;
+		}
+
+		.carousel-dots span {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.4);
+			transition: background 0.3s ease;
+		}
+
+		.carousel-dots span.active {
+			background: #e46427;
+			width: 24px;
+			border-radius: 999px;
+		}
+
+		/* 暂停提示 */
+		.carousel-pause-tip {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: rgba(255, 255, 255, 0.8);
+			font-size: 14px;
+			background: rgba(0, 0, 0, 0.5);
+			padding: 6px 16px;
+			border-radius: 999px;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+			pointer-events: none;
+			z-index: 4;
+		}
+
+		.carousel-top:hover .carousel-pause-tip {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<ul>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='../index.html';">
+					剧情简介
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page2.html';">
+					角色介绍
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page3.html';">
+					动画制作
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page4.html';">
+					制作相关
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page5.html';">
+					动画音乐
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page6.html';">
+					经典语句
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page7.html';">
+					放映信息
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page8.html';">
+					获奖记录
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page9.html';">
+					作品评价
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page10.html';">
+					观影感触
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="setCurrentPlayTime(); window.location.href='page11.html';">
+					手机壁纸
+				</a>
+			</li>
+		</ul>
+	</header>
+
+	<main>
+		<!-- ===== 顶部旋转轮播 ===== -->
+		<div class="carousel-top" id="carouselTop">
+			<div class="carousel-track" id="carouselTrack">
+				<img src="../images/b10.jpg" alt="壁纸1">
+				<img src="../images/b11.jpg" alt="壁纸2">
+				<img src="../images/b12.jpg" alt="壁纸3">
+				<img src="../images/b13.jpg" alt="壁纸4">
+			</div>
+			<div class="carousel-pause-tip">🖱️ 鼠标悬停暂停</div>
+			<div class="carousel-dots">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<h2>壁纸收藏</h2>
+		<h3><a href="#" onclick="setCurrentPlayTime(); window.location.href='page12.html';">更多</a></h3>
+		<ul class="bizhi">
+			<li><img src="../images/b1.jpg" width="250" height="420"></li>
+			<li><img src="../images/b2.jpg" width="250" height="420"></li>
+			<li><img src="../images/b3.jpg" width="250" height="420"></li>
+		</ul>
+
+		<h2>沙画鉴赏</h2>
+		<ul class="bizhi">
+			<li><img src="../images/1.jpg" width="420" height="250"></li>
+			<li><img src="../images/2.jpg" width="420" height="250"></li>
+		</ul>
+
+		<h2><a href="#" onclick="setCurrentPlayTime(); window.location.href='page17.html';">视频鉴赏</a></h2>
+	</main>
+
+	<script src="../js/common.js"></script>
+
+	<script>
+		// 轮播指示器联动（根据动画进度更新小圆点）
+		var track = document.getElementById('carouselTrack');
+		var dots = document.querySelectorAll('.carousel-dots span');
+		var totalSlides = dots.length;
+		var index = 0;
+
+		setInterval(function () {
+			// 获取当前动画进度
+			var rect = track.getBoundingClientRect();
+			var containerRect = track.parentElement.getBoundingClientRect();
+			var offset = containerRect.left - rect.left;
+			var slideWidth = containerRect.width;
+			var progress = offset / slideWidth;
+
+			// 计算当前显示的是第几张（0~3）
+			var newIndex = Math.round(progress);
+			if (newIndex >= totalSlides) newIndex = 0;
+			if (newIndex < 0) newIndex = 0;
+
+			if (newIndex !== index) {
+				index = newIndex;
+				dots.forEach(function (dot, i) {
+					dot.classList.toggle('active', i === index);
+				});
+			}
+		}, 500);
+
+		// 鼠标悬停时暂停动画
+		var carousel = document.getElementById('carouselTop');
+		carousel.addEventListener('mouseenter', function () {
+			document.querySelector('.carousel-track').style.animationPlayState = 'paused';
+		});
+		carousel.addEventListener('mouseleave', function () {
+			document.querySelector('.carousel-track').style.animationPlayState = 'running';
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+main {
+	padding-bottom: 40px;
+}
+
+main h2 {
+	color: #d4783a;
+	line-height: 60px;
+	text-align: center;
+	font-size: 34px;
+	font-family: "幼圆";
+	width: 15%;
+	margin: 10px auto;
+	letter-spacing: 2px;
+	text-shadow: 4px 3px 3px #b7a696;
+}
+
+main h3 {
+	color: #c0392b;
+	letter-spacing: 5px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 22px;
+}
+
+main table {
+	width: 50%;
+	border-collapse: collapse;
+	margin: 10px auto;
+	text-align: center;
+}
+
+main td,
+main tr {
+	line-height: 36px;
+}
+
+main td a {
+	color: #c0392b;
+	transition: color 0.3s ease;
+}
+
+main td a:hover {
+	color: #e46427;
+	text-decoration: underline;
+}
+
+main p {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+main p.p1 {
+	width: 58%;
+	max-width: 780px;
+	margin: 18px auto;
+	text-align: center;
+	color: #f5e6d3;
+	line-height: 1.8;
+	font-size: 15px;
+}
+
+main p.p1 span {
+	display: inline-block;
+	margin: 10px auto 6px;
+	color: #e46427;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px 18px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 999px;
+}
+
+main .p2 {
+	text-indent: 2em;
+	margin-bottom: 10px;
+	width: 80%;
+	color: #d4c5b2;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+main .p2:first-of-type {
+	color: #f0e6d8;
+}
+
+main form {
+	width: 50%;
+	margin: 20px auto;
+}
+
+main form span {
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+	color: #d4c5b2;
+	font-size: 14px;
+}
+
+main form input {
+	width: 350px;
+	line-height: 35px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
+	color: #f5e6d3;
+	padding: 0 12px;
+}
+
+main form input:focus {
+	border-color: #e46427;
+	outline: none;
+}
+
+main form textarea {
+	width: 350px;
+	height: 200px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
+	color: #f5e6d3;
+	padding: 10px 12px;
+	font-family: "微软雅黑", sans-serif;
+}
+
+main form textarea:focus {
+	border-color: #e46427;
+	outline: none;
+}
+
+main form input::placeholder,
+main form textarea::placeholder {
+	color: #8a7a6a;
+}
+
+main button {
+	display: block;
+	width: 60px;
+	height: 35px;
+	margin: 20px auto;
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #f5e6d3;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+main button:hover {
+	background-color: #c0392b;
+	border-color: #c0392b;
+	color: #fff;
+}
+
+.success-tip {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.8);
+	padding: 12px 22px;
+	background: rgba(0, 0, 0, 0.78);
+	color: #fff;
+	border-radius: 999px;
+	font-size: 16px;
+	z-index: 10000;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.35s ease;
+}
+
+.success-tip.show {
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
+}
+
+main .bizhi {
+	width: 80%;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+main .bizhi li {
+	width: 30%;
+	margin-bottom: 20px;
+	list-style: none;
+}
+
+main .bizhi li img {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+	border-radius: 8px;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+main .bizhi li img:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+main .p1 a {
+	color: #e46427;
+	transition: color 0.3s ease;
+}
+
+main .p1 a:hover {
+	color: #ff8c5a;
+	text-decoration: underline;
+}
